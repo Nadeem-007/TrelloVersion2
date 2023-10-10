@@ -20,10 +20,11 @@ public class EndToEndTrello extends BaseClass{
 		IndexPage index=new IndexPage(driver);
 		Thread.sleep(2000);
 
-		index.getloginOption2().click();
+		index.getloginOption1().click();
 		logger.info("LoginOption is Clicked in Index page");
+		Thread.sleep(2000);
 
-		Assert.assertEquals(driver.getTitle(), "Log in to Trello");
+		Assert.assertEquals(driver.getTitle(), "Log in to continue - Log in with Atlassian account");
 		logger.info("Title is as Expected");
 
 		Thread.sleep(2000);
