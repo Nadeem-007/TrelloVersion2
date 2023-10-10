@@ -7,12 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class IndexPage {
 
-	WebDriver driver;
+	WebDriver driver;   // this driver will control the browser
 	
-	public IndexPage(WebDriver driver) {
+	public IndexPage(WebDriver driver) // this driver will find the elements on the Web-page 
+	{
 		this.driver=driver;
 		
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this); /* We are here saying that both the driver are same by doing initElements(driver,this). By doing this both driver act as one */														
 		
 	}
  
